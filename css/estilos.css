@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+:root {
+    --main-bg-color: #FECBD0;
+    /* rgba(255, 230, 70) */
+    /* rgba(254, 207, 59, 1) */
+    /* --sec-bg-color:#b2ebc6; */
+    --sec-bg-color: #b9f2c9;
+    --tr-bg-color: #f4d1e9;
+    --black-soft: rgb(42, 42, 42);
+    --black: rgb(24, 23, 23);
+    /*  #facc1d */
+}
+
+p,
+span,
+div,
+a,
+form {
+    font-family: 'Merienda', sans-serif;
+    font-weight: 300;
+}
+
+/* FUENTES */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+header {
+    padding: 10px;
+    background-image: url(../imgs/fondos/fondo_animado_logo.gif), url(../imgs/fondos/fondo_animado_logo.svg), url(../imgs/fondos/fondo_animado_logoo.png);
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img_logo_principal {
+    height: auto;
+    width: 150px;
+    border-radius: 85px;
+    transition: transform 0.66s;
+}
+#img_logo_principal:hover{
+    transform: scale(1.08);
+    transition: transform 0.8s;
+}
+
+div>div>img,
+img {
+    height: 200px;
+    width: auto;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+.logo_tittle{
+    font-weight: 350 !important;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 244, 0.5);
+}
+
+
+/* top navegador -> para publicitar directamente nuestro num. */
+.top_nav_banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.228);
+}
+.x{
+    background-color: rgba(255, 230, 70);
+    display: grid;
+    gap: 4.5px;
+    padding: 10px;
+}
+
+.top_nav_icons_container, .top_nav_banner_r{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.top_nav_icons_container{
+    justify-content: space-around;
+}
+
+/* Navegador */
+nav {
+    background-color: var(--main-bg-color);
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: var(--sec-bg-color); */
+
+}
+nav>ul>li:hover{
+    transform: scale(1.2);
+}
+
+nav>ul>li:hover {
+    background-color: #ffffff;
+    /* border-bottom: 1.2px solid #000; */
+    box-shadow: 10 10px 10px 210px #000;
+
+}
+
+ul>li {
+    list-style: none;
+
+}
+
+ul>li>a {
+    height: 100%;
+
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+/* MAIN PARTE DE FESTIMANIA DONDE DICE QUE HACEMOS */
+
+
+.main_banner_container {
+    background-color: var(--sec-bg-color);
+    background-image: url(../imgs/banners/fondo_cena_corp.jpg);
+    background-repeat: repeat-y;
+    padding: 40px;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.main_banner_tittle{
+    font-size: 2.2em;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    text-shadow: 1px 1px 2px pink;
+    text-align: right;
+    padding: 10px;
+    text-wrap:pretty;
+    position: relative;
+    bottom: -60px;
+}
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* ICONOS DE LA SECCION DEL MAIN  */
+.icon_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.icon_from_banner {
+    height: 45px;
+}
+
+/* SERVICIOS  */
+.seccion_servicios {
+    background-color: var(--sec-bg-color);
+    min-height: 450px;
+    padding-top: 20px;
+    border-top: #ffffff solid 20px;
+}
+
+#servicios_items {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 30px;
+
+}
+
+/* selecciona las imagenes */
+#servicios_items>div>a>img {
+    border-radius: 8px;
+}
+
+#servicios_items>div>a>img:hover {
+    border-radius: 12px;
+    transform: scale(1.01);
+}
+
+/* NUEVA SECCION DE SERVICIOS - NUEVO DISEÑO borrar todo lo anterior. */
+.servicios_container{
+    background-color: #57B7BD;
+    display: flex;
+    flex-direction: column;
+
+}
+.s_items_containers_tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 0;
+}
+.s_items_containers_tittle>h2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+.tittle_line{
+    height: 4px;
+    background-color: #57B7BD;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: -35px;
+    z-index: 1;
+}
+.s_items_containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.s_left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 25%;
+}
+.s_right_side{
+    display: flex;
+    flex-direction: row;
+    
+    flex-basis: 65%;
+    align-items: center;
+}
+.s_right_side>div>h2{
+    text-align: center;
+    padding: 20px;
+}
+.s_right_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+.s_right_items>*{
+    background-color: orange;
+    margin: 5px;
+}
+/* imagen dentro de la parte izq de  */
+.img_servicios_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap:25px
+}
+.img_servicios{
+    width: auto;
+    height: 200px;
+    border-radius: 50px;
+    transition: transform 0.9s;
+}
+.img_servicios:hover{
+    transition: transform 0.9s;
+    transform: scale(1.11);
+}
+
+
+
+/* TESTIMONIOS */
+
+#testimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--sec-bg-color);
+    padding: 25px;
+}
+
+.testimonio_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonio_titulo {
+    background-color: #fdcacf;
+    border-top: 2.5px solid var(--black);
+    padding: 15px;
+}
+
+.testimonio_div>img {
+    height: 150px;
+    border-radius: 90px;
+    border: 1px solid var(--black);
+}
+
+.testimonio_nombre_cliente {
+    color: black;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.contacto {
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+footer {
+    width: 100%;
+    /* background-color:rgba(121,215,151); */
+    background-color: var(--main-bg-color);
+}
+
+#footer_created_by {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: rgb(24, 23, 23);
+    color: #ffff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+}
+
+.icon {
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+    color: white;
+}
+
+/* nuevo CONTACTO SECTION -> creado para ser una seccion separada del footer final
+nuevos estilos, efectos hover, nueva estructura:
+-> grid colum 500px
+-> grid layout >500px
+*/
+
+.contacto_container{
+    background-color: var(--main-bg-color);
+    display: grid;
+    padding: 10px;
+    row-gap: 20px;
+}
+
+/* el container divide en 2 items
+-> c_top_item parte superior (donde esta el titulo, posiblemente con una barra de fondo o color alterno. 
+-> c_main_item: contiene el formulario, un boton y un titulo, bg diferente al del contenedor.*/
+
+.c_top_item{
+    background-color: #b9f2c9;
+    align-items: center;
+    text-align: center;
+}
+.c_main_item{
+    background-color: var(--main-bg-color);
+    width: 100%;
+
+}
+/* estilos para los dos items containers */
+.c_c_items{
+    border-radius: 8px;
+}
+.form_container:hover{
+    background-color: rgba(255, 255, 255,0.88);}
+
+.form_container{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 20px 0 30px 0;
+    gap: 10px;
+}
+.form_items{
+    min-width: 70%;
+    font-family: 'Merienda';
+}
+.form_button{
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: var(--main-bg-color);
+    font-family: 'Merienda';
+    border-radius: 8px;
+    border: none;
+    color: var(--black);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: transform 0.5s;
+    transform: rotateX(0deg);
+}
+.form_button:hover{
+    background-color: #b9f2c9;
+    transform: rotateX(350deg);
+    padding: 14px;
+    transition: transform 2s;
+}
+
+
+/* PAGINA SOBRE NOSOTROS (HISTORIA) */
+
+.nuestra_historia_container{
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 12px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% auto;
+}
+
+/* esto controla las dos columnas de Nuestra historia */
+/* .nh_nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 500px;
+} */
+
+
+.nosotros_img_container {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}
+
+.nosotros_img_container>figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+    
+}
+.nosotros_img_container>figure>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    border: var(--main-bg-color) 1px solid;
+}
+
+.nosotros_img{
+    filter: grayscale(0%);
+    transition: filter 1s;
+}
+.nosotros_img:hover{
+    filter: grayscale(101%);
+}
